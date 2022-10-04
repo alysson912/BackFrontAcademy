@@ -12,15 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var logoImageView: UIImageView!
     
     @IBOutlet weak var ethanolPriceLabel: UILabel!
-    
     @IBOutlet weak var gasPriceLabel: UILabel!
     
     @IBOutlet weak var ethanolPriceTextField: UITextField!
-    
     @IBOutlet weak var gasPriceTextField: UITextField!
     
     @IBOutlet weak var calculateButton: UIButton!
-    
     @IBOutlet weak var resultLabel: UILabel!
     
     
@@ -45,10 +42,8 @@ class ViewController: UIViewController {
         gasPriceTextField.delegate = self
         ethanolPriceTextField.delegate = self
         
-        
         gasPriceTextField.keyboardType = .decimalPad
         ethanolPriceTextField.keyboardType = .decimalPad
-        
         
         calculateButton.setTitle("Calcular", for: .normal)
         calculateButton.setTitleColor(.white, for: .normal)
@@ -59,23 +54,24 @@ class ViewController: UIViewController {
         
         calculateButton.isEnabled = false
         calculateButton.setTitleColor(.white.withAlphaComponent(0.4), for: .disabled)
+  
     }
 
+// as? usado para especificar um tipo, ex: amigao agora vc é uma string
+
     @IBAction func tappedCalculateButton(_ sender: UIButton) {
-        var ethanolPrice: Double = Double(ethanolPriceTextField.text ?? "0.0") ?? 0.0
-        let gasPrice: Double = Double(ethanolPriceTextField.text ?? "0.0") ?? 0.0
-        
+        // metodo para substituir a string para .
+let ethanolPrice = Double((ethanolPriceTextField.text?.replacingOccurrences(of: ",", with: ".")) ??  "0.00") ?? 0.00
+let gasPrice = Double((gasPriceTextField.text?.replacingOccurrences(of: ",", with: ".")) ??  "0.00") ?? 0.00
+    
         if ethanolPrice / gasPrice > 0.7 {
             resultLabel.text = "Melhor utilizar Gasolina!"
             
         } else {
             resultLabel.text = "Melhor utilizar Álcool!"
         }
-        
-    
     }
 }
-
 
 extension ViewController: UITextFieldDelegate {
 
@@ -91,7 +87,4 @@ extension ViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
 }
-
-
