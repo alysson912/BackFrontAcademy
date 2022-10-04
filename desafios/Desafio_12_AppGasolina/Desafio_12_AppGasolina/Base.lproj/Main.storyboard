@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Desafio_12_AppGasolina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fuelpump.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DMJ-cE-yXX">
+                                <rect key="frame" x="95" y="91.000000000000014" width="200" height="200.33333333333334"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="b3T-W0-gA1"/>
+                                    <constraint firstAttribute="width" constant="200" id="iZ8-5v-rup"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Alcool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1do-cX-gkM">
+                                <rect key="frame" x="35.000000000000007" y="337" width="95.666666666666686" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Gasolina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaU-w1-0Kr">
+                                <rect key="frame" x="241" y="337" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xkm-WW-FRv">
+                                <rect key="frame" x="35.000000000000007" y="366" width="95.666666666666686" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMA-OF-9bU">
+                                <rect key="frame" x="241" y="366" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAo-I9-SPL">
+                                <rect key="frame" x="157" y="418" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnL-RW-84Y">
+                                <rect key="frame" x="153" y="508" width="84" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="calcular"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1do-cX-gkM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="9BN-9I-zCT"/>
+                            <constraint firstItem="NMA-OF-9bU" firstAttribute="leading" secondItem="GaU-w1-0Kr" secondAttribute="leading" id="9D7-9g-EoH"/>
+                            <constraint firstItem="DMJ-cE-yXX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="V2G-xB-irC"/>
+                            <constraint firstItem="xkm-WW-FRv" firstAttribute="trailing" secondItem="1do-cX-gkM" secondAttribute="trailing" id="VgF-bo-6ki"/>
+                            <constraint firstItem="DnL-RW-84Y" firstAttribute="top" secondItem="OAo-I9-SPL" secondAttribute="bottom" constant="69" id="ZS3-fw-ASB"/>
+                            <constraint firstItem="GaU-w1-0Kr" firstAttribute="top" secondItem="DMJ-cE-yXX" secondAttribute="bottom" constant="46" id="cGf-uh-3Zd"/>
+                            <constraint firstItem="xkm-WW-FRv" firstAttribute="top" secondItem="1do-cX-gkM" secondAttribute="bottom" constant="8" symbolic="YES" id="cTx-T3-aJY"/>
+                            <constraint firstItem="NMA-OF-9bU" firstAttribute="top" secondItem="GaU-w1-0Kr" secondAttribute="bottom" constant="8" symbolic="YES" id="e7M-hg-0PQ"/>
+                            <constraint firstItem="DMJ-cE-yXX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="eFq-th-SUG"/>
+                            <constraint firstItem="DnL-RW-84Y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fSF-vC-LIq"/>
+                            <constraint firstItem="OAo-I9-SPL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="j3d-T6-FdQ"/>
+                            <constraint firstItem="xkm-WW-FRv" firstAttribute="leading" secondItem="1do-cX-gkM" secondAttribute="leading" id="jQh-Rd-mPQ"/>
+                            <constraint firstItem="1do-cX-gkM" firstAttribute="top" secondItem="DMJ-cE-yXX" secondAttribute="bottom" constant="46" id="ltw-K6-th0"/>
+                            <constraint firstItem="NMA-OF-9bU" firstAttribute="trailing" secondItem="GaU-w1-0Kr" secondAttribute="trailing" id="nsU-KN-3nG"/>
+                            <constraint firstItem="OAo-I9-SPL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wYM-9H-4bD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GaU-w1-0Kr" secondAttribute="trailing" constant="35" id="zPe-FX-NWn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="DnL-RW-84Y" id="wdq-sr-Okj"/>
+                        <outlet property="ethanolPriceLabel" destination="1do-cX-gkM" id="0KL-Wd-fre"/>
+                        <outlet property="ethanolPriceTextField" destination="xkm-WW-FRv" id="laj-E0-xnL"/>
+                        <outlet property="gasPriceLabel" destination="GaU-w1-0Kr" id="EuZ-WZ-5Bv"/>
+                        <outlet property="gasPriceTextField" destination="NMA-OF-9bU" id="Dxj-74-JZp"/>
+                        <outlet property="logoImageView" destination="DMJ-cE-yXX" id="DYc-cS-Pj4"/>
+                        <outlet property="resultLabel" destination="OAo-I9-SPL" id="lsk-B4-VzE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.69230769230769" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fuelpump.fill" catalog="system" width="128" height="125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

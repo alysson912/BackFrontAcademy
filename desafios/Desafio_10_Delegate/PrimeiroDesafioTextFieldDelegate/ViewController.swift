@@ -23,12 +23,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         configFontEndColors()
     }
     
     func configFontEndColors() {
         registerButton.isEnabled = false
-        view.backgroundColor = .orange
+        view.backgroundColor = UIColor.systemBlue
+        
         nameTextField.placeholder = "Digite seu nome:"
         addressTextField.placeholder = "Digite seu endereço:"
         passwordTextField.placeholder = "Digite sua senha:"
@@ -39,22 +41,30 @@ class ViewController: UIViewController {
         passwordTextField.delegate = self
         confirmPasswordTextField.delegate = self
         
+        
+   
         nameTextField.layer.borderWidth = 2
         nameTextField.layer.borderColor = UIColor.lightGray.cgColor
+        nameTextField.layer.cornerRadius = 7
         
+        
+        addressTextField.layer.cornerRadius = 7
         addressTextField.layer.borderWidth = 2
         addressTextField.layer.borderColor = UIColor.lightGray.cgColor
         
+        passwordTextField.layer.cornerRadius = 7
         passwordTextField.layer.borderWidth = 2
         passwordTextField.layer.borderColor = UIColor.lightGray.cgColor
         
+        confirmPasswordTextField.layer.cornerRadius = 7
         confirmPasswordTextField.layer.borderWidth = 2
         confirmPasswordTextField.layer.borderColor = UIColor.lightGray.cgColor
         
         registerButton.setTitle("Cadastrar", for: .normal)
-        registerButton.backgroundColor = .systemBlue
+        registerButton.backgroundColor = .white
         registerButton.setTitleColor(.white, for: .normal)
         registerButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        registerButton.layer.cornerRadius = 7
     }
 
     @IBAction func tappedRegisterButton(_ sender: UIButton) {
