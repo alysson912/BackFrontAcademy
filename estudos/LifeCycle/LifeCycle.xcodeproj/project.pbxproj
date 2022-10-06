@@ -56,15 +56,31 @@
 		7696FCFE28EF8D36009B768D /* LifeCycle */ = {
 			isa = PBXGroup;
 			children = (
+				7696FD1428EF91AD009B768D /* Tela2 */,
+				7696FD1328EF91A0009B768D /* Home */,
 				7696FCFF28EF8D36009B768D /* AppDelegate.swift */,
 				7696FD0128EF8D36009B768D /* SceneDelegate.swift */,
-				7696FD0328EF8D36009B768D /* ViewController.swift */,
-				7696FD0528EF8D36009B768D /* Main.storyboard */,
 				7696FD0828EF8D37009B768D /* Assets.xcassets */,
 				7696FD0A28EF8D37009B768D /* LaunchScreen.storyboard */,
 				7696FD0D28EF8D37009B768D /* Info.plist */,
 			);
 			path = LifeCycle;
+			sourceTree = "<group>";
+		};
+		7696FD1328EF91A0009B768D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7696FD0328EF8D36009B768D /* ViewController.swift */,
+				7696FD0528EF8D36009B768D /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7696FD1428EF91AD009B768D /* Tela2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tela2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
