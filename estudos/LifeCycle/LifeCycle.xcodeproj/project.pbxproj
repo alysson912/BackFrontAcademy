@@ -13,6 +13,8 @@
 		7696FD0728EF8D36009B768D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7696FD0528EF8D36009B768D /* Main.storyboard */; };
 		7696FD0928EF8D37009B768D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7696FD0828EF8D37009B768D /* Assets.xcassets */; };
 		7696FD0C28EF8D37009B768D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7696FD0A28EF8D37009B768D /* LaunchScreen.storyboard */; };
+		7696FD1628EF97B7009B768D /* Tela2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696FD1528EF97B7009B768D /* Tela2ViewController.swift */; };
+		7696FD1828EF9CC6009B768D /* Tela3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696FD1728EF9CC6009B768D /* Tela3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7696FD0828EF8D37009B768D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7696FD0B28EF8D37009B768D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7696FD0D28EF8D37009B768D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7696FD1528EF97B7009B768D /* Tela2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela2ViewController.swift; sourceTree = "<group>"; };
+		7696FD1728EF9CC6009B768D /* Tela3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			children = (
 				7696FD0328EF8D36009B768D /* ViewController.swift */,
 				7696FD0528EF8D36009B768D /* Main.storyboard */,
+				7696FD1528EF97B7009B768D /* Tela2ViewController.swift */,
+				7696FD1728EF9CC6009B768D /* Tela3ViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -157,6 +163,8 @@
 				7696FD0428EF8D36009B768D /* ViewController.swift in Sources */,
 				7696FD0028EF8D36009B768D /* AppDelegate.swift in Sources */,
 				7696FD0228EF8D36009B768D /* SceneDelegate.swift in Sources */,
+				7696FD1828EF9CC6009B768D /* Tela3ViewController.swift in Sources */,
+				7696FD1628EF97B7009B768D /* Tela2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
