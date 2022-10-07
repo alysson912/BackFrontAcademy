@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Mg-j4-idO">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="y39-Z8-CPE" kind="presentation" id="r3L-4v-l44"/>
+                                    <segue destination="y39-Z8-CPE" kind="show" id="UBp-YU-oGu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,11 +44,12 @@
             <objects>
                 <viewController id="y39-Z8-CPE" customClass="Tela2ViewController" customModule="LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lw2-vT-0pj">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkX-28-3z2">
-                                <rect key="frame" x="157.66666666666666" y="400" width="75" height="34.333333333333314"/>
+                                <rect key="frame" x="157.66666666666666" y="433.33333333333331" width="75" height="34.333333333333314"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -63,25 +64,26 @@
                             <constraint firstItem="EkX-28-3z2" firstAttribute="centerX" secondItem="17a-qY-taO" secondAttribute="centerX" id="ec2-uY-MmV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gG3-4g-Nur"/>
                     <connections>
                         <segue destination="zt4-NQ-fwL" kind="show" identifier="Tela2Reference" id="Aus-P9-rUW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PuR-6r-hQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1512" y="-28"/>
+            <point key="canvasLocation" x="1558" y="-28"/>
         </scene>
         <!--Tela3 View Controller-->
         <scene sceneID="bFu-l2-7Js">
             <objects>
                 <viewController id="zt4-NQ-fwL" customClass="Tela3ViewController" customModule="LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Tela02" id="nYn-mk-OV7">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fr-Et-tdh">
-                                <rect key="frame" x="157.66666666666666" y="400" width="75" height="34.333333333333314"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="157.66666666666666" y="433.33333333333331" width="75" height="34.333333333333314"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -100,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsf-HG-6Xs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2261.5384615384614" y="-28.436018957345969"/>
+            <point key="canvasLocation" x="2285" y="-28"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GYw-xO-iHt">
@@ -113,12 +115,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yBT-KB-NXn"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qli-v9-W15"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GhC-Jq-Ijr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.76923076923077" y="-28.436018957345969"/>
+            <point key="canvasLocation" x="86" y="-28"/>
         </scene>
     </scenes>
     <resources>
