@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CalcVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CalcVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CalcVC" customModule="DivideAE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Yff-t2-IVX">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ntv-8N-ZX9">
+                                <rect key="frame" x="16" y="92" width="358" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor da conta:  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAn-KS-S9Z">
+                                        <rect key="frame" x="15" y="254" width="328" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex:000.0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1s-a2-Qlx">
+                                        <rect key="frame" x="15" y="283" width="328" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor dividido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="do7-Ip-G41">
+                                        <rect key="frame" x="35" y="24.999999999999996" width="288" height="34.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pyZ-zk-INa">
+                                        <rect key="frame" x="250" y="108" width="93" height="32"/>
+                                        <segments>
+                                            <segment title="0%"/>
+                                            <segment title="10%"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="gorjetaSelectSegmentControl:" destination="Y6W-OH-hqX" eventType="valueChanged" id="WM2-Fe-4fk"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gorjeta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3b-Cp-6Gt">
+                                        <rect key="frame" x="186.33333333333334" y="109.66666666666666" width="55.666666666666657" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="nEO-Rz-WYB">
+                                        <rect key="frame" x="249" y="191" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="tappedQtdDivisaoLabel:" destination="Y6W-OH-hqX" eventType="valueChanged" id="g2y-NA-oTH"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBj-FB-PXj">
+                                        <rect key="frame" x="184" y="184" width="57" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="KxL-Md-ivG"/>
+                                            <constraint firstAttribute="width" constant="57" id="VGP-SU-DUV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divisão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J92-nU-8cW">
+                                        <rect key="frame" x="188.66666666666666" y="155" width="55.333333333333343" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9U-V8-xaK">
+                                        <rect key="frame" x="142" y="325" width="75" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="tappedCalcButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0Tq-x4-koJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="do7-Ip-G41" secondAttribute="trailing" constant="35" id="368-gS-7Zg"/>
+                                    <constraint firstAttribute="height" constant="600" id="47G-al-3wo"/>
+                                    <constraint firstItem="SAn-KS-S9Z" firstAttribute="top" secondItem="tBj-FB-PXj" secondAttribute="bottom" constant="35" id="AEV-xW-MjT"/>
+                                    <constraint firstItem="SAn-KS-S9Z" firstAttribute="trailing" secondItem="n1s-a2-Qlx" secondAttribute="trailing" id="Agy-Y8-1lS"/>
+                                    <constraint firstItem="J92-nU-8cW" firstAttribute="top" secondItem="D3b-Cp-6Gt" secondAttribute="bottom" constant="25" id="Fpo-M9-L89"/>
+                                    <constraint firstItem="SAn-KS-S9Z" firstAttribute="leading" secondItem="n1s-a2-Qlx" secondAttribute="leading" id="OjC-3x-AxS"/>
+                                    <constraint firstItem="n1s-a2-Qlx" firstAttribute="top" secondItem="SAn-KS-S9Z" secondAttribute="bottom" constant="8" symbolic="YES" id="QWE-Vy-fPe"/>
+                                    <constraint firstAttribute="trailing" secondItem="pyZ-zk-INa" secondAttribute="trailing" constant="15" id="Rx6-0A-N8K"/>
+                                    <constraint firstItem="do7-Ip-G41" firstAttribute="leading" secondItem="Ntv-8N-ZX9" secondAttribute="leading" constant="35" id="Vex-Kh-lTs"/>
+                                    <constraint firstAttribute="trailing" secondItem="nEO-Rz-WYB" secondAttribute="trailing" constant="15" id="XXn-Ni-m8W"/>
+                                    <constraint firstItem="n1s-a2-Qlx" firstAttribute="leading" secondItem="Ntv-8N-ZX9" secondAttribute="leading" constant="15" id="Ygl-9L-dpA"/>
+                                    <constraint firstItem="n1s-a2-Qlx" firstAttribute="centerY" secondItem="Ntv-8N-ZX9" secondAttribute="centerY" id="dTY-fd-qR9"/>
+                                    <constraint firstItem="do7-Ip-G41" firstAttribute="top" secondItem="Ntv-8N-ZX9" secondAttribute="top" constant="25" id="e41-Mn-Jj5"/>
+                                    <constraint firstItem="pyZ-zk-INa" firstAttribute="top" secondItem="do7-Ip-G41" secondAttribute="bottom" constant="48.333333333333343" id="f18-mH-1EK"/>
+                                    <constraint firstItem="tBj-FB-PXj" firstAttribute="top" secondItem="J92-nU-8cW" secondAttribute="bottom" constant="8" symbolic="YES" id="j3V-F6-gf6"/>
+                                    <constraint firstItem="pyZ-zk-INa" firstAttribute="leading" secondItem="D3b-Cp-6Gt" secondAttribute="trailing" constant="8" symbolic="YES" id="jEC-tm-YVq"/>
+                                    <constraint firstItem="nEO-Rz-WYB" firstAttribute="leading" secondItem="tBj-FB-PXj" secondAttribute="trailing" constant="8" symbolic="YES" id="lap-aw-hE9"/>
+                                    <constraint firstAttribute="trailing" secondItem="J92-nU-8cW" secondAttribute="trailing" constant="114" id="uWz-eb-hMy"/>
+                                    <constraint firstAttribute="trailing" secondItem="n1s-a2-Qlx" secondAttribute="trailing" constant="15" id="v8E-qb-MSL"/>
+                                    <constraint firstItem="SAn-KS-S9Z" firstAttribute="top" secondItem="nEO-Rz-WYB" secondAttribute="bottom" constant="31" id="vaZ-7o-C3c"/>
+                                    <constraint firstItem="n1s-a2-Qlx" firstAttribute="centerX" secondItem="Ntv-8N-ZX9" secondAttribute="centerX" id="xPs-9Q-RZJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ntv-8N-ZX9" secondAttribute="trailing" constant="16" id="540-p9-qrJ"/>
+                            <constraint firstItem="Yff-t2-IVX" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="97z-3x-ffw"/>
+                            <constraint firstItem="Yff-t2-IVX" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="BZw-fh-pAI"/>
+                            <constraint firstItem="Yff-t2-IVX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="L64-aW-FZx"/>
+                            <constraint firstItem="Ntv-8N-ZX9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="45" id="aYq-lE-UNq"/>
+                            <constraint firstAttribute="bottom" secondItem="Yff-t2-IVX" secondAttribute="bottom" id="cRo-Ka-Vsy"/>
+                            <constraint firstItem="Ntv-8N-ZX9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="vo0-D7-PsW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calcContaButton" destination="h9U-V8-xaK" id="Kmz-ZJ-Z3u"/>
+                        <outlet property="gorjetaSwitch" destination="pyZ-zk-INa" id="cs5-wj-IOu"/>
+                        <outlet property="mainView" destination="Ntv-8N-ZX9" id="xeA-zu-5qy"/>
+                        <outlet property="qtdDivisao" destination="nEO-Rz-WYB" id="oD3-yd-Igh"/>
+                        <outlet property="qtdDivisaoLabel" destination="tBj-FB-PXj" id="Ocr-dc-xlg"/>
+                        <outlet property="valorASerDivididoLabel" destination="do7-Ip-G41" id="zyg-lo-8bp"/>
+                        <outlet property="valorContaTotalTextField" destination="n1s-a2-Qlx" id="hM7-Mm-tpz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.76923076923077" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1000" height="1500"/>
+    </resources>
+</document>
