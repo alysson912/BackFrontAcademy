@@ -15,28 +15,31 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupHomeTableView()
     }
     
     func setupHomeTableView(){
         self.homeTableView.delegate = self
         self.homeTableView.dataSource = self // entrando em conformidade com o protocolo
         // register cell
+        homeTableView.register(HomeTableViewCell.nib(), forCellReuseIdentifier: HomeTableViewCell.identifier)
     }
-    
     
     
     
     
 }
-//MARK: PROTOCOLOS DA TABLEVIEW e seus metodos obrigatórios !! 
+//MARK: PROTOCOLOS DA TABLEVIEW e seus metodos obrigatórios !!
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 15
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath)
+        as? HomeTableViewCell // usado para acessar o conteudo da classe
+        
+        return  cell ?? UITableViewCell()
     }
     
     
