@@ -11,12 +11,12 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tableViewComCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionViewAvancado" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ozi-fU-AmP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="s2t-qf-bx1">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -24,14 +24,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ozi-fU-AmP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ECl-iD-Tlu"/>
-                            <constraint firstItem="Ozi-fU-AmP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KCr-tt-MYr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ozi-fU-AmP" secondAttribute="bottom" id="YLs-r6-ctB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ozi-fU-AmP" secondAttribute="trailing" id="jb4-mF-D2N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s2t-qf-bx1" secondAttribute="trailing" id="CRk-bJ-kdc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s2t-qf-bx1" secondAttribute="bottom" id="Kfm-Th-iew"/>
+                            <constraint firstItem="s2t-qf-bx1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LcB-po-KpK"/>
+                            <constraint firstItem="s2t-qf-bx1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VKM-bs-A2Y"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="Ozi-fU-AmP" id="b1F-rw-KZS"/>
+                        <outlet property="tableView" destination="s2t-qf-bx1" id="2hV-23-d86"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

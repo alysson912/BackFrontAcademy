@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  tableViewComCollectionView
+//  CollectionViewAvancado
 //
-//  Created by ALYSSON MENEZES on 07/11/22.
+//  Created by ALYSSON MENEZES on 08/11/22.
 //
 
 import UIKit

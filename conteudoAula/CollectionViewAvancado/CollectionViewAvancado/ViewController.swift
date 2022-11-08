@@ -1,40 +1,40 @@
 //
 //  ViewController.swift
-//  tableViewComCollectionView
+//  CollectionViewAvancado
 //
-//  Created by ALYSSON MENEZES on 07/11/22.
+//  Created by ALYSSON MENEZES on 08/11/22.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       configTableView()
-    }
-    func configTableView(){
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(CarTableViewCell.nib(), forCellReuseIdentifier: CarTableViewCell.identifier)
+        configTablewView()
     }
 
+    func configTablewView(){
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(CustomTableViewCell.nib(), forCellReuseIdentifier: CustomTableViewCell.identifier)
+    }
 }
 
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+     return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CarTableViewCell.identifier, for: indexPath) as? CarTableViewCell
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as? CustomTableViewCell
+        return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 182
+        return 200
     }
 }
