@@ -13,6 +13,8 @@
 		76B0997929245EB400CE6BAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B0997729245EB400CE6BAB /* Main.storyboard */; };
 		76B0997B29245EB600CE6BAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B0997A29245EB600CE6BAB /* Assets.xcassets */; };
 		76B0997E29245EB600CE6BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B0997C29245EB600CE6BAB /* LaunchScreen.storyboard */; };
+		76B099882924603300CE6BAB /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B099862924603300CE6BAB /* CarCollectionViewCell.swift */; };
+		76B099892924603300CE6BAB /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B099872924603300CE6BAB /* CarCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		76B0997A29245EB600CE6BAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76B0997D29245EB600CE6BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76B0997F29245EB600CE6BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B099862924603300CE6BAB /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
+		76B099872924603300CE6BAB /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		76B0997029245EB400CE6BAB /* praticandoCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				76B099852924601900CE6BAB /* Cell */,
 				76B0997129245EB400CE6BAB /* AppDelegate.swift */,
 				76B0997329245EB400CE6BAB /* SceneDelegate.swift */,
 				76B0997529245EB400CE6BAB /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				76B0997F29245EB600CE6BAB /* Info.plist */,
 			);
 			path = praticandoCollectionView;
+			sourceTree = "<group>";
+		};
+		76B099852924601900CE6BAB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				76B099862924603300CE6BAB /* CarCollectionViewCell.swift */,
+				76B099872924603300CE6BAB /* CarCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,7 @@
 				76B0997E29245EB600CE6BAB /* LaunchScreen.storyboard in Resources */,
 				76B0997B29245EB600CE6BAB /* Assets.xcassets in Resources */,
 				76B0997929245EB400CE6BAB /* Main.storyboard in Resources */,
+				76B099892924603300CE6BAB /* CarCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 				76B0997629245EB400CE6BAB /* ViewController.swift in Sources */,
 				76B0997229245EB400CE6BAB /* AppDelegate.swift in Sources */,
 				76B0997429245EB400CE6BAB /* SceneDelegate.swift in Sources */,
+				76B099882924603300CE6BAB /* CarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
