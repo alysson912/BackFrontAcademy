@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="appRoleta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="w0U-8a-9Pn">
+                                <rect key="frame" x="0.0" y="426" width="393" height="426"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="pRY-Jw-Maj">
+                                <rect key="frame" x="121.66666666666669" y="110" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1Ur-BA-eNU"/>
+                                    <constraint firstAttribute="height" constant="150" id="NBc-xu-cwf"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="digite um nome " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jo6-mx-AgO">
+                                <rect key="frame" x="35" y="285" width="323" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7g-FO-zTG">
+                                <rect key="frame" x="35" y="327" width="323" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="sortear"/>
+                                <connections>
+                                    <action selector="tappedSortearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLF-Xx-ttl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="jo6-mx-AgO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="NOu-Qb-pen"/>
+                            <constraint firstItem="pRY-Jw-Maj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bLg-pv-etc"/>
+                            <constraint firstItem="m7g-FO-zTG" firstAttribute="leading" secondItem="jo6-mx-AgO" secondAttribute="leading" id="cN1-fK-0qo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jo6-mx-AgO" secondAttribute="trailing" constant="35" id="cYj-7p-hdH"/>
+                            <constraint firstItem="jo6-mx-AgO" firstAttribute="top" secondItem="pRY-Jw-Maj" secondAttribute="bottom" constant="25" id="iij-Gb-DC5"/>
+                            <constraint firstItem="pRY-Jw-Maj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="trV-EI-ZYX"/>
+                            <constraint firstItem="m7g-FO-zTG" firstAttribute="trailing" secondItem="jo6-mx-AgO" secondAttribute="trailing" id="x1B-c5-HVL"/>
+                            <constraint firstItem="m7g-FO-zTG" firstAttribute="top" secondItem="jo6-mx-AgO" secondAttribute="bottom" constant="8" symbolic="YES" id="x4h-Pl-64J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="homeImageView" destination="pRY-Jw-Maj" id="IgJ-eP-p5O"/>
+                        <outlet property="homeTableView" destination="w0U-8a-9Pn" id="bG6-3G-CmT"/>
+                        <outlet property="nameTextField" destination="jo6-mx-AgO" id="gDK-Os-jER"/>
+                        <outlet property="sortearButton" destination="m7g-FO-zTG" id="sIN-0l-XVg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
